@@ -1,0 +1,53 @@
+{
+    "name": "Sidharth Assudaney",
+    "email": "sid.assudaney@gmail.com",
+    "mobile_number": "9848272564",
+    "skills": [
+        "Java",
+        "Onboarding",
+        "Aws",
+        "Spring",
+        "Redis",
+        "Postgres"
+    ],
+    "college_name": [],
+    "degree": null,
+    "designation": [
+        "Software Developer",
+        "Software Engineer",
+        "Senior Software Developer"
+    ],
+    "experience": [
+        "Google Inc. , Hyderabad \u2014 Software Engineer (L4)",
+        "JAN 2025 - PRESENT",
+        "-  Developed features for Google Home",
+        "-  Automated work\ufb02ows to cut down the need for 1 developer for 2-3 days",
+        "per client onboarding, including product import, custom PDF generation,",
+        "background tasks, and noti\ufb01cations.",
+        "-  Lead a team of 7 individuals driving product from its ideation right to",
+        "its production",
+        "Uber Technologies Ltd. , Hyderabad \u2014 Senior Software Developer",
+        "JAN 2020 - DEC 2024",
+        "-  Developed a high-traffic, ride booking platform at India's largest online",
+        "ride booking platform.",
+        "-  Led the fair estimation tech team responsible for estimating fair for",
+        "different rides around the country.",
+        "-  Led unit testing and code coverage efforts within the team, introducing",
+        "practices like TDD",
+        "-  Engineered user-speci\ufb01c ride recommendation with ultra-low latency,",
+        "enhancing booking rates.",
+        "Joveo Technologies Pvt. Ltd. ,  Hyderabad \u2014 Software Engineer",
+        "JAN 2019 - DEC 2019",
+        "-  Reduced db calls signi\ufb01cantly by choosing to embed permissions into user",
+        "tokens instead of calling db to fetch user permissions for each API call.",
+        "-  Broke away core parts of monolith like User Management, Authentication",
+        "and Authorization into standalone services, packages and libraries."
+    ],
+    "company_names": [
+        "Uber Technologies Ltd.",
+        "Joveo Technologies Pvt. Ltd.",
+        "Google Inc."
+    ],
+    "no_of_pages": 1,
+    "total_experience": 5.92
+}
