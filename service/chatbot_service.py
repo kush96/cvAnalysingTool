@@ -25,7 +25,7 @@ class ChatBotService:
     def initiate_chat(self):
         print("""
 Welcome to the CV Query Chatbot!
-All files placed inside data/sample_csv have now been processed 
+All files placed inside data/sample_cvs have now been processed 
 To begin with, pls start with entering a few basic filter criteria
 """)
         continue_chat = True
