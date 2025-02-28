@@ -10,8 +10,7 @@ Your task is to filter CVs that strictly meet **all** the specified criteria:
 ### Filtering Criteria (All conditions must be satisfied)  
 1. The candidate must have **at least** the specified years of experience.  
 2. The candidate must possess **all** the required skills (if `['Any']`, this condition is ignored).  
-3. The candidate must have **work experience in at least one** of the specified industries (if `['Any']`,this condition
-is ignored).  
+3. The candidate must have **similar** designation to the desired designations 
 
 ### JSON Schema (Parsed CVs)  
 Each CV's data follows this structure:  

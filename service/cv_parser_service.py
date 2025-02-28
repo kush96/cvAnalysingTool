@@ -8,6 +8,8 @@ import fitz
 from spacy.matcher import PhraseMatcher
 import time
 
+from constants import Constants
+
 
 class CvParserService:
     def __init__(self):
@@ -32,7 +34,7 @@ Based on our current benchmarks, parsing 10 CVs takes approximately 30 seconds.
         self.persist_data(self._all_cv_data)
 
     def _setup_matcher(self):
-        patterns = [self.nlp.make_doc(title) for title in config['job_titles'].split(",")]
+        patterns = [self.nlp.make_doc(title) for title in Constants.JOB_TITLES_EXHAUSTIVE_LIST.split(",")]
         self.matcher.add("JOB_TITLE", patterns)
 
     def _setup_ner(self):
@@ -121,7 +123,7 @@ Based on our current benchmarks, parsing 10 CVs takes approximately 30 seconds.
         # Additional filtering: Keep only companies that contain known suffixes
         filtered_companies = [
             company for company in companies if
-            any(suffix in company.lower() for suffix in config['company_suffix'].split(','))
+            any(suffix in company.lower() for suffix in Constants.COMPANY_SUFFIX_EXHAUSTIVE_LIST.split(','))
         ]
 
         return list(filtered_companies)

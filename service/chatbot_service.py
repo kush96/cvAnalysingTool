@@ -42,8 +42,8 @@ To begin with, pls start with entering a few basic filter criteria
             min_experience_input = input("Minimum years of experience: ..... Press Enter to Skip \n")
             min_experience = float(min_experience_input) if min_experience_input else 0
 
-            companies_input = input("Companies/industries to filter by (comma-separated): ..... Press Enter to Skip \n")
-            required_companies = [comp.strip() for comp in companies_input.split(",")] if companies_input else ['Any']
+            designations_input = input("Designations to filter by (comma-separated): ..... Press Enter to Skip \n")
+            desired_designations = [comp.strip() for comp in designations_input.split(",")] if designations_input else ['Any']
 
             all_cv_data = self._cv_parser_service.load_all_cv_data()
             filtered_cv_data = {
@@ -59,7 +59,7 @@ To begin with, pls start with entering a few basic filter criteria
             print("Filtering CVs based on given data......")
 
             response = self._llm_service.get_structured_response(
-                INITIAL_FILTER_PROMPT.format(filtered_cv_data, min_experience, required_skills, required_companies),
+                INITIAL_FILTER_PROMPT.format(filtered_cv_data, min_experience, required_skills, desired_designations),
                 INITIAL_FILTER_ASSISTANT_PROMPT, FilteredCvListStructuredResponse)
             if not response.cv_names:
                 print("....no CVs found with the given criteria, pls enter the filters again")
@@ -68,7 +68,8 @@ To begin with, pls start with entering a few basic filter criteria
             print("The below CVs must be of interest to you ")
             print(response.cv_names)
             parsed_cv_data = self._cv_parser_service.load_cv_data(response.cv_names)
-            print("How can I help you further ?")
+            print("\nRobo : Hello!! I am here to help you with clearing through the clutter on CVs."
+                  "Feel free to quit chat or restart chat from the start.\n")
             while continue_chat:
                 user_prompt = input("\nYou: ")
 
