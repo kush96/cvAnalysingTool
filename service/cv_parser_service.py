@@ -138,13 +138,34 @@ Based on our current benchmarks, parsing 10 CVs takes approximately 30 seconds.
         return list(matched_titles)
 
     def _get_all_cv_data(self):
-        """Processes all CVs in the folder and extracts structured data."""
+        """
+    Processes all CVs in the folder and extracts structured data. For each CV we want to parse and extract the
+    below.
+        • "name": the candidate's name (string)
+        • "email": the candidate's email address (string)
+        • "mobile_number": the candidate's contact number (string)
+        • "skills": a list of skills (list of strings)
+        • "college_name": a list of college names (list of strings)
+        • "degree": a list of degrees earned (list of strings)
+        • "designation": a list of job titles (list of strings)
+        • "experience": a list of experience entries (list of strings)
+        • "company_names": a list of companies the candidate has worked for (list of strings)
+        • "no_of_pages": the number of pages in the CV (integer)
+        • "total_experience": total years of experience (float)
+    An external library, pyresparser is able to parse a lot of this data quite well, like skills, name, email,
+    experience, total_experience meanwhile other important details like designation, company names and education
+    history.
+
+    At the moment, details like company_names and education are being extracted based on pattern matching, but we could
+    do a better job at it through custom NER mapping
+        """
         all_cv_data = {}
         for file in os.listdir(self._path_to_cvs):
             if file.endswith(".pdf") or file.endswith(".docx"):
                 file_path = os.path.join(self._path_to_cvs, file)
 
-                # Parse the resume using pyresparser
+                # We give path to an exhaustive list of skills we have defined ourselves. These will be picked from the
+                # csv file
                 parsed_result = ResumeParser(file_path, skills_file=config['skills_file_path']).get_extracted_data()
 
                 if not parsed_result:
