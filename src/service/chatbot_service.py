@@ -36,13 +36,13 @@ To begin with, pls start with entering a few basic filter criteria
             tokens in query. However, for the time being since parser isn't able to accurately parse information like
             skills, companies and experience with a high accuracy, we will be using llm structured query response  
             """
-            skills_input = input("Enter required skills (comma-separated): ..... Press Enter to Skip \n")
+            skills_input = input("\nEnter required skills (comma-separated): ..... Press Enter to Skip :\n")
             required_skills = [skill.strip() for skill in skills_input.split(",")] if skills_input else ['Any']
 
-            min_experience_input = input("Minimum years of experience: ..... Press Enter to Skip \n")
+            min_experience_input = input("\nMinimum years of experience: ..... Press Enter to Skip :\n")
             min_experience = float(min_experience_input) if min_experience_input else 0
 
-            designations_input = input("Designations to filter by (comma-separated): ..... Press Enter to Skip \n")
+            designations_input = input("\nDesignations to filter by (comma-separated): ..... Press Enter to Skip :\n")
             desired_designations = [comp.strip() for comp in designations_input.split(",")] if designations_input else ['Any']
 
             all_cv_data = self._cv_parser_service.load_all_cv_data()
@@ -65,7 +65,7 @@ To begin with, pls start with entering a few basic filter criteria
                 print("....no CVs found with the given criteria, pls enter the filters again")
                 continue
 
-            print("The below CVs must be of interest to you ")
+            print("\nThe below CVs must be of interest to you ")
             print(response.cv_names)
             parsed_cv_data = self._cv_parser_service.load_cv_data(response.cv_names)
             print("\nRobo : Hello!! I am here to help you with clearing through the clutter on CVs."

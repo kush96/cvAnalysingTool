@@ -16,7 +16,7 @@ class CvParserService:
         print("""
 Pls wait while CVs are being analysed.
 The CVs are currently being analysed and parsed; this process may take up to a couple of minutes.
-Based on our current benchmarks, parsing 10 CVs takes approximately 30 seconds.
+Based on our current benchmarks, parsing 1 CV takes approximately 3 seconds.
         
         """)
         num_cvs = len([f for f in os.listdir(config['cv_folder_path']) if f.endswith(('.pdf', '.docx'))])
