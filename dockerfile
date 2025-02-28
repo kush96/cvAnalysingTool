@@ -18,5 +18,8 @@ RUN python -m nltk.downloader words && \
 # Copy the rest of your application code into the container
 COPY . .
 
+# Move main.py from the src folder to the working directory and remove it from src
+RUN mv src/main.py .
+
 # Set the default command to run your application
 CMD ["python", "main.py"]

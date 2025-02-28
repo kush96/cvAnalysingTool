@@ -1,4 +1,4 @@
-from config import config
+from src.util.config import config
 from pyresparser import ResumeParser
 import os
 import spacy
@@ -6,9 +6,8 @@ import json
 from docx import Document
 import fitz
 from spacy.matcher import PhraseMatcher
-import time
 
-from constants import Constants
+from src.util.constants import Constants
 
 
 class CvParserService:

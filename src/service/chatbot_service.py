@@ -1,8 +1,8 @@
 from pydantic import BaseModel
 
-from prompts.prompts import INITIAL_FILTER_PROMPT, INITIAL_FILTER_ASSISTANT_PROMPT, CHAT_FILTER_ASSISTANT_PROMPT
-from service.cv_parser_service import CvParserService
-from service.llm_service import LLMService
+from src.util.prompts import INITIAL_FILTER_PROMPT, INITIAL_FILTER_ASSISTANT_PROMPT, CHAT_FILTER_ASSISTANT_PROMPT
+from src.service.cv_parser_service import CvParserService
+from src.service.llm_service import LLMService
 
 
 # The below class is a structured response we are enforcing after a basic filtering of

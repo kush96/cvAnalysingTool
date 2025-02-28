@@ -12,6 +12,7 @@ if ENV not in cfgParser:
 config = cfgParser[ENV]
 
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+
 if not OPENAI_API_KEY:
     raise ValueError(f"OpenAI API Key Needed to start chatbot...closing down")
 else:

@@ -1,6 +1,6 @@
 from openai import OpenAI
 from pyrate_limiter import RequestRate, Duration, Limiter
-from config import config
+from src.util.config import config
 
 
 class LLMService:

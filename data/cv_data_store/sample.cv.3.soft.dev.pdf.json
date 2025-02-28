@@ -1,0 +1,48 @@
+{
+    "name": "Sidhart Tiwari",
+    "email": "sid.tiwari@gmail.com",
+    "mobile_number": "9882938495",
+    "skills": [
+        "Spring boot",
+        "Onboarding",
+        "Java",
+        "Gcp",
+        "Redis",
+        "Postgres",
+        "Python",
+        "Spring"
+    ],
+    "college_name": [],
+    "degree": null,
+    "designation": [
+        "Software Engineer",
+        "Software Developer",
+        "Senior Software Developer"
+    ],
+    "experience": [
+        "Java, Spring Boot, Mongo, Postgres, Redis, AWI, GCP, Python",
+        "Google India Pvt. Ltd., Hyderabad \u2014 Software Engineer (L4)",
+        "JAN 2025 - PRESENT",
+        "Developed features for Google Home",
+        "Automated work\ufb02ows to cut down the need for 1 developer for 2-3 days per client",
+        "onboarding, including product import, custom PDF generation, background tasks,",
+        "and noti\ufb01cations.",
+        "Lead a team of 7 individuals driving product from its ideation right to its production",
+        "Uber Technologies Ltd., Hyderabad \u2014 Senior Software Developer",
+        "JAN 2019 - DEC 2024",
+        "Developed a high-traf\ufb01c, ride booking platform at India's largest online ride booking",
+        "platform.",
+        "Led the fair estimation tech team responsible for estimating fair for different rides",
+        "around the country.",
+        "Led unit testing and code coverage efforts within the team, introducing practices",
+        "like TDD",
+        "Engineered user-speci\ufb01c ride recommendation with ultra-low latency, enhancing",
+        "booking rates.",
+        "\u3161"
+    ],
+    "company_names": [
+        "Uber Technologies Ltd."
+    ],
+    "no_of_pages": 2,
+    "total_experience": 6.0
+}
