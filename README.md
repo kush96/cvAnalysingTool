@@ -34,7 +34,7 @@ docker build -t cv_analyser_build .
 docker run -it -e OPENAI_API_KEY=<OPENAI_API_KEY> cv_analyser_build
 
 ```
-
+Download the key from [here](https://drive.google.com/file/d/1zR0brKquKopVRqXRioZG6GUV5fEB7qHW/view?usp=sharing) if you don't have one of your own.
 ## Usage
 
 The bot processes CVs stored inside the `data/sample_cvs` directory.
@@ -86,9 +86,31 @@ At any point, you can **restart filtering** or **exit the chat** simply by instr
 
 ## Basic Working
 
-There are 2 Majo
+The core idea is to begin with a broad filtering mechanism that quickly eliminates most irrelevant CVs. To enable this, each CV must first be processed to extract essential details. The extracted information includes:
 
-Please make sure to update tests as appropriate.
+1. Name  
+2. Email  
+3. Mobile Number  
+4. Skills  
+5. College Name  
+6. Degree  
+7. Designation  
+8. Experience  
+9. Company Names  
+10. Number of Pages in CV  
+11. Total Experience  
+
+To achieve this, we use a combination of the **PyResparser** library and pattern matching techniques. While PyResparser provides a convenient way to extract structured information, its accuracy is relatively low. A more precise approach would be leveraging **OpenAI APIs** for parsing, but this would significantly increase costs, even for a small-scale use case like processing 100 CVs. Since API-based parsing is expensive due to the high cost of assessing and processing PDFs, we opted for a trade-off: sacrificing some accuracy to reduce costs by handling CV parsing ourselves.
+
+### Filtering Process
+
+Once the CVs have been parsed into structured JSON data, we send the combined JSON of all CVs to **GPT APIs** to identify relevant candidates based on the initial filtering criteria. However, sending a large dataset in a single API request is inefficient due to token limitations and costs. The larger the input prompt, the more expensive the request.
+
+To mitigate this, we apply **broad pre-filters** (such as **minimum years of experience, required skills, and designation**) before sending data to the GPT model. Since we already extract this information from the CVs, we avoid sending unnecessary details—especially large text fields like **detailed experience descriptions or educational history**, which can contain a significant number of tokens.
+
+### Optimizing GPT Queries
+
+By applying the initial filtering, we eliminate a large number of CVs before engaging the GPT model. This allows us to **reduce token consumption** and **optimize cost efficiency**. After this pre-filtering stage, we can feed only the **remaining, more relevant CVs** into the chatbot’s context for further analysis, enabling a more interactive and cost-effective selection process.
 
 ## License
 
