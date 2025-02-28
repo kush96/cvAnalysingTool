@@ -1,0 +1,49 @@
+{
+    "name": "West Bengal",
+    "email": "rahul.sengupta@email.com",
+    "mobile_number": "765 4321",
+    "skills": [
+        "D3.js",
+        "Bootstrap",
+        "React",
+        "Tailwind css",
+        "Webpack",
+        "Javascript"
+    ],
+    "college_name": [],
+    "degree": [
+        "e-commerce platform to React.js",
+        "B.Tech in Computer Science"
+    ],
+    "designation": [],
+    "experience": [
+        "Senior Front-End Engineer",
+        "TechNova Innovations, Kolkata",
+        "June 2021 - Present",
+        "\u25cf  Migrated legacy e-commerce platform to React.js, boosting page load speed",
+        "by 40%.",
+        "\u25cf  Built reusable component library, cutting development time by 25% across",
+        "5+ projects.",
+        "\u25cf  Implemented A/B tests with UX teams, increasing conversion rates by 18%.",
+        "Front-End Engineer",
+        "CodeCraft Solutions, Bhubaneswar",
+        "January 2019 - May 2021",
+        "\u25cf  Developed fintech SaaS dashboards using React.js and D3.js.",
+        "\u25cf  Reduced CSS bundle size by 30% via Webpack optimization.",
+        "\u25cf  Mentored 3 junior developers in React state management best practices.",
+        "Junior Front-End Developer",
+        "WebWorks Pvt Ltd, Guwahati",
+        "July 2017 - December 2018",
+        "\u25cf  Delivered 10+ responsive client landing pages with cross-browser",
+        "compatibility.",
+        "\u25cf  Automated tasks using JavaScript, saving 15+ hours/month for the team.",
+        "\u25cf  Resolved critical UI bugs during user testing phases."
+    ],
+    "company_names": [
+        "TechNova Innovations",
+        "WebWorks Pvt Ltd",
+        "CodeCraft Solutions"
+    ],
+    "no_of_pages": 2,
+    "total_experience": 7.42
+}

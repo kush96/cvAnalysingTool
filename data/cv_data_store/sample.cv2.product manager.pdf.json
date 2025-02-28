@@ -1,0 +1,29 @@
+{
+    "name": "Ananya Sharma",
+    "email": "ananya.sharma@email.com",
+    "mobile_number": "765 4321",
+    "skills": [],
+    "college_name": [],
+    "degree": [
+        "MBA"
+    ],
+    "designation": [],
+    "experience": [
+        "Ananya Sharma 123 Green Avenue Bangalore, Karnataka, India",
+        "+91 98765 43210",
+        "ananya.sharma@email.com",
+        "\u25cf  Product Lifecycle Management",
+        "\u25cf  Agile & Scrum Methodologies",
+        "\u25cf  Market Research & Competitive Analysis",
+        "\u25cf  Stakeholder & Client Management",
+        "\u25cf  Data Analytics & Metrics Tracking",
+        "\u25cf  UX/UI Collaboration",
+        "\u25cf  Roadmap Planning & Prioritization",
+        "\u25cf  Go-To-Market Strategy"
+    ],
+    "company_names": [
+        "Infosys Solutions Ltd / Associate Product Manager"
+    ],
+    "no_of_pages": 2,
+    "total_experience": 0.0
+}

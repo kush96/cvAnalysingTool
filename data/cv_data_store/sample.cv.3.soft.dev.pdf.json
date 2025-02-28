@@ -3,21 +3,21 @@
     "email": "sid.tiwari@gmail.com",
     "mobile_number": "9882938495",
     "skills": [
-        "Spring boot",
-        "Onboarding",
-        "Java",
-        "Gcp",
-        "Redis",
-        "Postgres",
         "Python",
-        "Spring"
+        "Gcp",
+        "Postgres",
+        "Spring",
+        "Spring boot",
+        "Java",
+        "Redis",
+        "Onboarding"
     ],
     "college_name": [],
     "degree": null,
     "designation": [
         "Software Engineer",
-        "Software Developer",
-        "Senior Software Developer"
+        "Senior Software Developer",
+        "Software Developer"
     ],
     "experience": [
         "Java, Spring Boot, Mongo, Postgres, Redis, AWI, GCP, Python",

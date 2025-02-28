@@ -1,0 +1,46 @@
+{
+    "name": "Aisha Al",
+    "email": "aisha.almansoori@email.com",
+    "mobile_number": "987 6543",
+    "skills": [
+        "Bootstrap",
+        "A/b testing",
+        "Tailwind css",
+        "React",
+        "Javascript",
+        "Onboarding"
+    ],
+    "college_name": [],
+    "degree": [
+        "BSc in Computer Science",
+        "e-commerce product \ufb01lter"
+    ],
+    "designation": [],
+    "experience": [
+        "TechNova Solutions FZCO, Dubai",
+        "Front-End Development Intern | June 2023 - August 2023 (3 months)",
+        "\u25cf  Built responsive UIs for 3 client websites using React.js and CSS Grid.",
+        "\u25cf  Converted Figma designs to functional web pages, improving client satisfaction by 95%.",
+        "\u25cf  Reduced website load time by 20% through image optimization.",
+        "DigitalCrafters LLC, Abu Dhabi",
+        "Web Development Intern | January 2023 - April 2023 (4 months)",
+        "\u25cf  Developed a dynamic e-commerce product \ufb01lter with vanilla JavaScript.",
+        "\u25cf  Fixed cross-browser compatibility issues for a client portal.",
+        "\u25cf  Contributed to a team project awarded \"Best Internship Initiative 2023.",
+        "CodeHub Technologies, Sharjah",
+        "UI/UX Intern | September 2022 - February 2023 (6 months)",
+        "\u25cf  Created reusable React components for an internal admin dashboard.",
+        "\u25cf",
+        "Improved user engagement by 15% via A/B testing.",
+        "\u25cf  Documented front-end work\ufb02ows for team onboarding.",
+        "StartUpWaves, Dubai",
+        "Front-End Trainee | July 2022 - August 2022 (2 months)",
+        "\u25cf  Redesigned a landing page to enhance mobile responsiveness.",
+        "\u25cf  Learned Git basics and participated in Agile work\ufb02ows."
+    ],
+    "company_names": [
+        "DigitalCrafters LLC"
+    ],
+    "no_of_pages": 2,
+    "total_experience": 0.92
+}

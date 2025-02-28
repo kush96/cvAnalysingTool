@@ -1,0 +1,36 @@
+{
+    "name": "Mohammed Faisal",
+    "email": "faisal.mohammed@email.com",
+    "mobile_number": "123 4567",
+    "skills": [
+        "Customer retention"
+    ],
+    "college_name": [],
+    "degree": [
+        "B.Sc \u2013 Computer Science"
+    ],
+    "designation": [],
+    "experience": [
+        "Emaar Technologies / Product Manager",
+        "Jan 2023 \u2013 Present | Dubai, UAE",
+        "- Managed digital transformation initiatives improving customer",
+        "retention by 20%.",
+        "- Developed AI-driven insights dashboard for real estate clients,",
+        "increasing engagement.",
+        "- Worked with engineering teams to enhance platform stability and",
+        "performance.",
+        "- Spearheaded feature development based on user behavior analytics.",
+        "Careem / Associate Product Manager",
+        "June 2021 \u2013 Dec 2022 | Dubai, UAE",
+        "- Assisted in launching new ride-hailing features, reducing churn rate by",
+        "15%.",
+        "- Coordinated with UX/UI teams to optimize app interface and usability.",
+        "- Analyzed product performance metrics and recommended data-driven",
+        "improvements.",
+        "- Collaborated with cross-functional teams to streamline product",
+        "operations."
+    ],
+    "company_names": [],
+    "no_of_pages": 1,
+    "total_experience": 3.58
+}

@@ -3,19 +3,19 @@
     "email": "sid.assudaney@gmail.com",
     "mobile_number": "9848272564",
     "skills": [
-        "Onboarding",
+        "Aws",
+        "Postgres",
+        "Spring",
         "Java",
         "Redis",
-        "Postgres",
-        "Aws",
-        "Spring"
+        "Onboarding"
     ],
     "college_name": [],
     "degree": null,
     "designation": [
         "Software Engineer",
-        "Software Developer",
-        "Senior Software Developer"
+        "Senior Software Developer",
+        "Software Developer"
     ],
     "experience": [
         "Google Inc. , Hyderabad \u2014 Software Engineer (L4)",
